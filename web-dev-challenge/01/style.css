@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+}
+main{
+    max-width: 1300px;
+  	margin: 0 auto;
+  	padding: 40px;
+}
+body{
+	font-family: "Calibri", sans-serif;
+	font-size: 1em;
+	background-image: url("photos/background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+	width: 100%;
+	height: 100%;
+}
+header{
+	text-align: center;
+	width:100%;
+    margin:0 auto;
+}
+	header img{
+		opacity: 0.4;
+		width:40%;
+        margin 0 auto;
+	}
+.column{
+/*    display:flex;*/
+/*    flex-wrap:wrap; */
+    width:50%;
+    padding:0 3%;
+    float:left;
+}
+    .column > div,footer{
+        width: 100%;
+        padding:5%;
+        padding-top:0;
+    }
+
+    h2{
+        color: white;
+	    text-shadow: 1px 2px 2px #3e0a0e;
+	    text-align: center;
+	    font-family: "Calibri Light", sans-serif;
+	    font-size: 1.5em;
+	    font-weight: bold;
+        margin:0px;
+        margin-bottom: 5%;   
+    }
+
+    fieldset{
+        background-color: #f4f4f4;
+        -webkit-box-shadow: 0px 0px 1px 19px rgba(0,0,0,0.3); /*Spread Radius 19px*/
+        -moz-box-shadow: 0px 0px 1px 19px rgba(0,0,0,0.3);
+        box-shadow: 0px 0px 1px 19px rgba(0,0,0,0.3);
+        border:none;
+        margin: 7% 5%;
+        padding:5%;
+/*        border-radius:1px;*/
+    }
+    input,select,textarea{
+        width: 100%;
+        padding:10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color:#aeaeae;
+        outline: none;  /*deletes blue default border on focus*/
+        font-size: 1em;
+        text-shadow: 1px 1px #ececec;
+        background-color: #f4f4f4;
+    }
+    .fa-envelope, .fa-lock, .fa-user, .fa-map-marker, .fa-mobile{
+	   width: 15px;
+    }
+    .fa-envelope{
+        width:6px;
+    }
+    .input-icon input[type=text]{
+	   padding-left:25%;
+    }
+    .input-icon input[type=password]{
+        padding-left:25%;
+    }
+    .input-icon input[type=email]{
+        padding-left:25%;
+    }
+    .input-icon input[type=phone]{
+        padding-left:25%;
+    }
+    select{
+	   padding-left:25%;
+    }
+    .input-icon{
+        position:relative;
+    }
+    .input-icon i{
+        position: absolute;
+        left:0;
+        top:10px;
+        padding:4px 30px 4px 20px ;
+/*        padding:1% 7% 1% 3% ;*/
+        color:#dedede;
+        font-size: 1.3em;
+        border-right: 1px solid #ccc;
+        margin-top: 5px;
+    }
+    .input-icon .fa-envelope{
+        padding-left: 15px;
+        padding-right: 35px;
+    }
+    textarea{
+	height: 300px;
+    }
+    ::placeholder{
+        color:#aeaeae;
+    }
+    input:focus{
+        border-color: #9e1010;
+        box-shadow: 0 0 8px #9e1010;
+    }
+    input[type=checkbox]:focus{
+        border-color: none;
+        box-shadow:none;
+    }
+    textarea:focus{
+        border-color: #9e1010;
+        box-shadow: 0 0 8px #9e1010;
+    }
+    select:focus{
+        border-color: #9e1010;
+        box-shadow: 0 0 8px #9e1010;
+    }
+    label{
+        font-family:"Calibri";
+        font-size: 17px;
+        color: #afafaf;
+        text-shadow: 1px 1px #ececec;
+        padding-left:30px   
+    }
+    input[type=checkbox]{
+        display:none;
+    }
+    input[type=checkbox]+label{
+        color:#aeaeae;
+    }
+    .remember input[type=checkbox]+label{
+        margin-top: 5%;
+        display:inline-block;
+    }
+    .checkbox{
+        position: relative;
+        width: 90%;
+    }
+    .remember{
+        width: 100%;
+    }
+    .checkbox label:before{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        top: 5%;
+        bottom: 1px;
+        border: 1px solid #ccc;
+        background:#f4f4f4;
+    }
+    .remember label:before{
+        top:40%
+    }
+    input[type=checkbox]:checked + label:before {
+        content: "";
+        display:inline-block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        border:1px solid #7fc320;
+        background:#7fc320;
+        background: -webkit-gradient(linear, left top, left bottom, from(#addb54), to(#7fc320));
+        background: -webkit-linear-gradient(top, #addb54, #7fc320)
+        background: -moz-linear-gradient(top, #addb54, #7fc320);
+        background: -ms-linear-gradient(top, #addb54, #7fc320);
+        background: -o-linear-gradient(top, #addb54, #7fc320);
+        padding:5px;
+    }
+    button{
+        font-size: 1.2em;
+        width: 100%;
+        color:white;
+        text-shadow: 1px 1px #2b6a01;
+        padding:3%;
+        border: 1px solid #3b9a00;
+        background: #7fc320;
+        background: -webkit-gradient(linear, left top, left bottom, from(#addb54), to(#7fc320));
+        background: -webkit-linear-gradient(top, #addb54, #7fc320)
+        background: -moz-linear-gradient(top, #addb54, #7fc320);
+        background: -ms-linear-gradient(top, #addb54, #7fc320);
+        background: -o-linear-gradient(top, #addb54, #7fc320);
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 4%;
+        outline: none;
+    }
+    button:hover{
+        background: #3b9a00;
+    }
+    button[disabled]:hover{
+        border: 1px solid #3b9a00;
+        background: #7fc320;
+        background: -webkit-gradient(linear, left top, left bottom, from(#addb54), to(#7fc320));
+        background: -webkit-linear-gradient(top, #addb54, #7fc320)
+        background: -moz-linear-gradient(top, #addb54, #7fc320);
+        background: -ms-linear-gradient(top, #addb54, #7fc320);
+        background: -o-linear-gradient(top, #addb54, #7fc320);
+    }
+    button:focus{
+        border-color: #3b9a00;
+        box-shadow: 0 0 8px #3b9a00;
+    }
+    .button-2{
+        width: 40%;
+    }
+    .button-3{
+        width: 40%;
+        border-color:#a2202a;
+        background: #f03745;
+        background: -webkit-gradient(linear, left top, left bottom, from(#f76e7e), to(#f03745));
+        background: -webkit-linear-gradient(top, #f76e7e, #f03745)
+        background: -moz-linear-gradient(top, #f76e7e, #f03745);
+        background: -ms-linear-gradient(top, #f76e7e, #f03745);
+        background: -o-linear-gradient(top, #f76e7e, #f03745);
+    }
+    .button-3:hover{
+        background: #a1222c;
+    }
+    .button-4{
+        float: left;
+        margin-top: 3%;
+    }
+    .button-5{
+        float: right;
+        margin-top: 3%;
+    }
+    button[disabled]:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+    .button-3:focus{
+        border-color: #a1222c;
+        box-shadow: 0 0 8px #a1222c;
+    }
+    footer{
+        text-align: center;
+        margin: 10% auto;
+        font-family: "Trebuchet MS", sans-serif;
+        width:80%;
+    }
+    footer img{
+        opacity:0.3;
+        width:100%;
+    }
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1024px){
+        button{
+        font-size: 1em;
+    }
+} 
+@media screen and (max-width: 800px) {
+    .column{
+        width:100%;
+        padding:0 2%;
+    }
+    .column > div,header img{
+        width: 100%;
+    }
+    button{
+        font-size: 1.1em;
+    }
+    .input-icon input[type=text]{
+	   padding-left:17%;
+    }
+    .input-icon input[type=password]{
+        padding-left:17%;
+    }
+    .input-icon input[type=email]{
+        padding-left:17%;
+    }
+    .input-icon input[type=phone]{
+        padding-left:17%;
+    }
+    select{
+	   padding-left:17%;
+    }
+}
+@media screen and (max-width: 600px) {
+    main{
+        padding:10px;
+    }
+    .column{
+        padding:0;
+    }
+    button{
+        font-size: 0.9em;
+    }
+    .input-icon input[type=text]{
+	   padding-left:25%;
+    }
+    .input-icon input[type=password]{
+        padding-left:25%;
+    }
+    .input-icon input[type=email]{
+        padding-left:25%;
+    }
+    .input-icon input[type=phone]{
+        padding-left:25%;
+    }
+    select{
+	   padding-left:25%;
+    }
+    .input-icon i{
+        padding:1% 12% 1% 5% ;
+        color:#dedede;
+        font-size: 1.3em;
+        border-right: 1px solid #ccc;
+        margin-top: 5px;
+    }
+    .input-icon .fa-envelope{
+        padding-left: 4%;
+        padding-right: 13%;
+    }
+}
+@media screen and (max-width: 480px){
+    .remember {
+        display:block;
+    }
+    .remember button{
+        width:100%;     
+    }
+    .remember input[type=checkbox]+label{
+        margin-top:0%;
+    }
+    .remember label:before{
+        top:0%;
+    }
+}
+@media screen and (max-width: 380px){
+    .input-icon i{
+        padding:4% 10% % 7% ;
+        color:#dedede;
+        font-size: 1.2em;
+        border-right: 1px solid #ccc;
+        margin-top: 10px;
+    }
+    .input-icon .fa-envelope{
+        padding-left: 4%;
+        padding-right: 13%;
+        font-size: 1.1em;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+}
