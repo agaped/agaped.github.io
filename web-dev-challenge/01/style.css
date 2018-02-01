@@ -30,16 +30,16 @@ header{
 /*    display:flex;*/
 /*    flex-wrap:wrap; */
     width:50%;
-    padding:0 3%;
     float:left;
 }
-    .column > div,footer{
+    footer{
         width: 100%;
         padding:5%;
     }
 
 .register, .send, .sign-in, .recover, .subscribe{
-    background-color: rgba(0, 0, 0, 0.23);
+    width: 100%;
+background-color: rgba(0, 0, 0, 0.23);
   padding: 20px;
   width: 380px;
   margin:auto;
